@@ -10,7 +10,7 @@ public class App {
     public static void main(String[] args) {
         BridgeFrom bridgeFrom = new FromA1();
         BridgeTarget bridgeTarget = bridgeFrom.bridgeTarget;
-
+        // FIXME 这个模式这种写法不对
         bridgeFrom.from();
         bridgeTarget = new TargetB2();
         bridgeTarget.target();
